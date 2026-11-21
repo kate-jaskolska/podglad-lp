@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oryginał: His Secret Obsession – przyciski i kolory (mobile)</title>
+<style>
+  :root { --ink:#222; --muted:#555; --line:#ddd; --bg:#fafafa; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 820px;
+    padding: 20px 16px 64px;
+    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: #fff;
+  }
+  a { color: #0b57d0; }
+  .toplink { margin: 0 0 20px; font-size: 15px; }
+  h1 { font-size: 1.55rem; line-height: 1.25; margin: 0 0 12px; }
+  h2 { font-size: 1.25rem; margin: 2.2em 0 0.6em; padding-top: 0.4em; border-top: 1px solid var(--line); }
+  h3 { font-size: 1.05rem; margin: 1.6em 0 0.5em; }
+  p, li { color: #333; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .note { background: #f6f6f6; border-left: 3px solid #9B3144; padding: 10px 12px; font-size: 14px; }
+  figure { margin: 1.2em 0 1.6em; }
+  figure img {
+    display: block;
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    background: #f3f3f3;
+  }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; max-width: 520px; }
+  figure.wide img { max-width: 300px; }
+  figure.btn img { max-width: 390px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 12px 0 20px; }
+  th, td { border: 1px solid #e5e5e5; padding: 7px 8px; text-align: left; vertical-align: middle; }
+  th { background: #f4f4f4; font-weight: 600; }
+  .sw { display: inline-block; width: 28px; height: 18px; border: 1px solid #ccc; border-radius: 3px; vertical-align: middle; margin-right: 8px; }
+  .hex { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
+  ul { padding-left: 1.2em; }
+</style>
+</head>
+<body>
+
+<p class="toplink"><a href="../">← Podgląd strony 15 (wersja Check v4)</a></p>
+
+<h1>Oryginał: His Secret Obsession – przyciski i kolory (mobile)</h1>
+
+<p>Zrzuty z żywej strony z 21 listopada 2026 (strefa Europe/Warsaw). Widok telefonu 390×844, gęstość 2×. Kolory i czcionki pochodzą z <em>computed style</em> w przeglądarce, chyba że zaznaczono, że zmierzono je z pikseli grafiki.</p>
+
+<p class="note">Oryginał ma dziś dwie wersje: klasyczną stronę wideo z transkryptem oraz dłuższą stronę tekstową (inny układ, inny przycisk). Poniżej są obie, bo obie są na hissecretobsession.com.</p>
+
+<h2>Adresy</h2>
+<ul>
+  <li>Klasyczna strona wideo + tekst: <a href="https://hissecretobsession.com/">https://hissecretobsession.com/</a></li>
+  <li>Wersja tekstowa: <a href="https://hissecretobsession.com/love/obsession/presentation.php?text=1&amp;vtid=lp0text">presentation.php?text=1&amp;vtid=lp0text</a></li>
+</ul>
+
+<h2>Kolory (zmierzone)</h2>
+
+<h3>Klasyczna strona</h3>
+<table>
+  <thead><tr><th>Element</th><th>Kolor</th><th>Skąd</th></tr></thead>
+  <tbody>
+    <tr><td>Pasek / belka u góry („Discover His Secret Obsession…”)</td><td><span class="sw" style="background:#9B3144"></span><span class="hex">#9B3144</span>, tekst <span class="hex">#FFFFFF</span></td><td>computed style</td></tr>
+    <tr><td>Przycisk „Unlock His Heart Today!” (mobile)</td><td><span class="sw" style="background:#3399FF"></span><span class="hex">#3399FF</span>, tekst <span class="hex">#FFFFFF</span>, obramowanie <span class="hex">#3399FF</span></td><td>computed style (klasa <code>btn-primary</code>)</td></tr>
+    <tr><td>Ten sam przycisk po najechaniu / kliknięciu</td><td><span class="sw" style="background:#CC0033"></span><span class="hex">#CC0033</span>, tekst <span class="hex">#FFFFFF</span></td><td>żywy plik CSS, reguła <code>:hover/:active</code> — nie ze zrzutu</td></tr>
+    <tr><td>Przycisk desktop „Add to Cart!” (ukryty na telefonie, klasa <code>hidden-xs</code>)</td><td>to samo <span class="hex">#3399FF</span>, czcionka 30px</td><td>computed style</td></tr>
+    <tr><td>Tekst główny</td><td><span class="sw" style="background:#333333"></span><span class="hex">#333333</span></td><td>computed style</td></tr>
+    <tr><td>Linia „Hi, My name is James…” i duże zdania (26px)</td><td><span class="sw" style="background:#58595B"></span><span class="hex">#58595B</span></td><td>computed style</td></tr>
+    <tr><td>Linki, m.in. „Click here”</td><td><span class="sw" style="background:#337AB7"></span><span class="hex">#337AB7</span></td><td>computed style (domyślny niebieski Bootstrapa 3)</td></tr>
+    <tr><td>Przycisk odtwarzania na wideo</td><td><span class="sw" style="background:#E66C8D"></span><span class="hex">#E66C8D</span></td><td>computed style</td></tr>
+    <tr><td>Tło kolumny z treścią</td><td><span class="sw" style="background:#FFFFFF;border-color:#bbb"></span><span class="hex">#FFFFFF</span></td><td>computed style</td></tr>
+    <tr><td>Tło po bokach strony</td><td><span class="sw" style="background:#F3F3F3"></span><span class="hex">#F3F3F3</span></td><td>z pikseli zrzutu</td></tr>
+    <tr><td>Ramka „Have questions?”</td><td>tło <span class="sw" style="background:#DFF0D8"></span><span class="hex">#DFF0D8</span>, tekst <span class="hex">#3C763D</span></td><td>computed style</td></tr>
+    <tr><td>Ramka „References”</td><td>tło <span class="sw" style="background:#D9EDF7"></span><span class="hex">#D9EDF7</span>, tekst <span class="hex">#31708F</span></td><td>computed style</td></tr>
+  </tbody>
+</table>
+
+<h3>Wersja tekstowa</h3>
+<table>
+  <thead><tr><th>Element</th><th>Kolor</th><th>Skąd</th></tr></thead>
+  <tbody>
+    <tr><td>Nagłówki typu „It's Something He CRAVES…”, „The Glimpse Phrase”, „One Time Cost $49”</td><td><span class="sw" style="background:#9F2740"></span><span class="hex">#9F2740</span></td><td>computed style</td></tr>
+    <tr><td>Tekst główny</td><td><span class="sw" style="background:#000000"></span><span class="hex">#000000</span> (czasem dziedziczone <span class="hex">#333333</span>)</td><td>computed style</td></tr>
+    <tr><td>Różowe pudełko z cytatem</td><td>tło <span class="sw" style="background:#FFECF0"></span><span class="hex">#FFECF0</span>, tekst cytatu <span class="hex">#9F2740</span></td><td>computed style (tło) i piksele (tekst)</td></tr>
+    <tr><td>Żółte podkreślenie zdań i „just $49!”</td><td><span class="sw" style="background:#FFFC00"></span><span class="hex">#FFFC00</span>, tekst <span class="hex">#000000</span></td><td>computed style</td></tr>
+    <tr><td>Sekcja „secrets you're about to discover”</td><td>tło <span class="sw" style="background:#F3F3F3"></span><span class="hex">#F3F3F3</span></td><td>computed style</td></tr>
+    <tr><td>Przycisk-grafika „Add To Cart” (nie CSS)</td><td>gradient ok. <span class="sw" style="background:#FFDB00"></span><span class="hex">#FFDB00</span> → <span class="sw" style="background:#FFC500"></span><span class="hex">#FFC500</span>, brzeg ok. <span class="hex">#FFA300</span>; kółko z koszykiem ok. <span class="sw" style="background:#002A41"></span><span class="hex">#002A41</span>; napis prawie czarny</td><td>z pikseli grafiki — to obrazek, nie styl CSS</td></tr>
+    <tr><td>Link pod przyciskiem „Click Here To Get Instant Access Now!”</td><td><span class="sw" style="background:#106CBF"></span><span class="hex">#106CBF</span></td><td>z pikseli zrzutu</td></tr>
+  </tbody>
+</table>
+
+<h2>Czcionki (computed style)</h2>
+
+<h3>Klasyczna strona</h3>
+<table>
+  <thead><tr><th>Element</th><th>Font</th></tr></thead>
+  <tbody>
+    <tr><td>Tekst główny (body)</td><td>"Helvetica Neue", Helvetica, Arial, sans-serif — 15px, waga 400, interlinia 21.4286px (czyli 1.4286), kolor #333333</td></tr>
+    <tr><td>Nagłówek H1 „His Secret Obsession”</td><td>Arial, sans-serif — 36px, waga 500, interlinia 39.6px (1.1), kolor #333333</td></tr>
+    <tr><td>„Hi, My name is James…”</td><td>lato_black — 26px, waga 400, kolor #58595B (to aktualny font na żywej stronie; nie Times)</td></tr>
+    <tr><td>Duże zdania, np. „The Hero Instinct”</td><td>arial — 26px, waga 400, kolor #58595B</td></tr>
+    <tr><td>Przycisk mobile „Unlock His Heart Today!”</td><td>"Helvetica Neue", Helvetica, Arial, sans-serif — 14px, waga 400, kolor #FFFFFF</td></tr>
+    <tr><td>Pasek górny</td><td>"Helvetica Neue", Helvetica, Arial, sans-serif — 15px, kolor #FFFFFF</td></tr>
+  </tbody>
+</table>
+
+<h3>Wersja tekstowa</h3>
+<table>
+  <thead><tr><th>Element</th><th>Font</th></tr></thead>
+  <tbody>
+    <tr><td>„Hi, My name is James…” oraz nagłówki w kolorze #9F2740</td><td>"Libre Baskerville", 18–30px, waga 700, często italic</td></tr>
+    <tr><td>Tekst główny</td><td>Roboto, zwykle 14–16px, waga 400 lub 700, kolor #000000</td></tr>
+    <tr><td>Podpisy / cytaty pomocnicze</td><td>"Roboto Slab", 14–17px, kolor #95A5A6</td></tr>
+    <tr><td>„One Time Cost $49”</td><td>Roboto 28px, kolor #9F2740</td></tr>
+    <tr><td>Stopka „SECURE ORDER”</td><td>"Open Sans", Arial, sans-serif — 8px, waga 700, kolor #404040</td></tr>
+  </tbody>
+</table>
+
+<h2>1. Klasyczna strona wideo + tekst</h2>
+<p class="meta">https://hissecretobsession.com/ — wysokość strony ok. 24&nbsp;289 px. Na telefonie jest jeden niebieski przycisk CSS na dole: „Unlock His Heart Today!”.</p>
+
+<figure>
+  <img src="home-01-pierwszy-ekran.jpg" alt="Pierwszy ekran klasycznej strony His Secret Obsession: logo, bordowy pasek, wideo z różowym przyciskiem play, nagłówek i powitanie Jamesa">
+  <figcaption>Pierwszy ekran. Bordowy pasek #9B3144, różowy przycisk play #E66C8D, H1 Arial 36px, linia „Hi, My name is James…” w lato_black 26px, kolor #58595B.</figcaption>
+</figure>
+
+<figure>
+  <img src="home-02-typografia.jpg" alt="Duża szara linia typograficzna The Hero Instinct i dalszy tekst historii">
+  <figcaption>Typografia w środku strony: duże zdanie w arial 26px, kolor #58595B, potem zwykły tekst Helvetica Neue 15px / #333333. Pogrubienia (np. BIOLOGICAL DRIVE) zostają w tym samym kroju, waga 700.</figcaption>
+</figure>
+
+<figure>
+  <img src="home-03-produkt.jpg" alt="Zdjęcie opakowania programu His Secret Obsession na klasycznej stronie">
+  <figcaption>Blok z produktem na klasycznej stronie.</figcaption>
+</figure>
+
+<figure>
+  <img src="home-04-cena.jpg" alt="Fragment z ceną: 197 dolarów, potem 97, potem jednorazowa płatność 49 dolarów">
+  <figcaption>Sekcja ceny. Kwoty są w bieżącym tekście (Helvetica Neue 15px, #333333); „one-time, single, secure payment of just $49!” jest pogrubione. Nie ma tu osobnego kolorowego pudełka z ceną.</figcaption>
+</figure>
+
+<figure>
+  <img src="home-05-gwarancja.jpg" alt="Czerwony nagłówek 60-Day 100% No Questions Asked Money-Back Guarantee i pieczęć Gwarantowane">
+  <figcaption>Gwarancja 60 dni: czerwony nagłówek i pieczęć „GUARANTEED” (to grafiki / stylizowany blok, nie ten sam przycisk co CTA). Później jest jeszcze złota pieczęć 100% przy przycisku.</figcaption>
+</figure>
+
+<figure>
+  <img src="home-06-przycisk.jpg" alt="Niebieski przycisk Unlock His Heart Today, cena 49 dolarów, złota pieczęć gwarancji i SiteLock">
+  <figcaption>CTA na końcu strony: nad przyciskiem szary napis „One time cost of $49”, sam przycisk #3399FF z białym tekstem, pod spodem złota pieczęć 60 dni i SiteLock. Niżej zielona ramka kontaktowa #DFF0D8.</figcaption>
+</figure>
+
+<figure class="btn">
+  <img src="home-07-przycisk-zblizenie.jpg" alt="Zbliżenie niebieskiego przycisku Unlock His Heart Today i ceny 49 dolarów">
+  <figcaption>Zbliżenie przycisku. Tło i obramowanie #3399FF, tekst #FFFFFF, font Helvetica Neue 14px. To jest ten sam styl, który w CSS nazywa się <code>btn-primary</code>.</figcaption>
+</figure>
+
+<figure class="wide">
+  <img src="home-full.jpg" alt="Zmniejszony zrzut całej klasycznej strony His Secret Obsession od góry do dołu">
+  <figcaption>Cała klasyczna strona, zmniejszona (oryginał ma ok. 24 tys. px wysokości). Żeby dało się ją otworzyć, zrzut jest mocno skompresowany.</figcaption>
+</figure>
+
+<h2>2. Wersja tekstowa (dłuższy, nowszy układ)</h2>
+<p class="meta">https://hissecretobsession.com/love/obsession/presentation.php?text=1&amp;vtid=lp0text — wysokość ok. 38&nbsp;430 px. Przycisk „Add To Cart” jest grafiką (żółto-złoty), powtórzoną przy cenie 49&nbsp;$ i jeszcze raz na końcu strony.</p>
+
+<figure>
+  <img src="text-01-pierwszy-ekran.jpg" alt="Pierwszy ekran tekstowej strony His Secret Obsession: Hi My name is James i bordowy nagłówek It's Something He CRAVES">
+  <figcaption>Pierwszy ekran wersji tekstowej. Powitanie w Libre Baskerville (italic, czarne), nagłówek „It's Something He CRAVES…” w Libre Baskerville italic, kolor #9F2740, tekst Roboto.</figcaption>
+</figure>
+
+<figure>
+  <img src="text-02-cytat-rozowy.jpg" alt="Różowe pudełko z cytatem I've realized that I won't be happy without you in my life">
+  <figcaption>Różowe pudełko z cytatem: tło #FFECF0, tekst #9F2740, italic.</figcaption>
+</figure>
+
+<figure>
+  <img src="text-03-wyroznienie.jpg" alt="Żółte podkreślenie zdania it's not about trying to please him">
+  <figcaption>Żółte wyróżnienie zdań, tło #FFFC00, czarny tekst.</figcaption>
+</figure>
+
+<figure>
+  <img src="text-04-sekrety.jpg" alt="Sekcja The Glimpse Phrase na szarym tle z okrągłym zdjęciem pary">
+  <figcaption>Lista „sekretów”: szare tło #F3F3F3, tytuł „The Glimpse Phrase” w Libre Baskerville italic, #9F2740.</figcaption>
+</figure>
+
+<figure>
+  <img src="text-05-cena-197.jpg" alt="Fragment o cenie 197 dolarów i lifetime of warmth companionship and love">
+  <figcaption>Początek schodzenia z ceną (najpierw $197). Nadal zwykły tekst Roboto, bez przekreślenia na tym kadrze.</figcaption>
+</figure>
+
+<figure>
+  <img src="text-06-cena-i-przycisk.jpg" alt="Cena 49 dolarów na żółtym tle, napis you save 150, opakowanie produktu i złoty przycisk Add To Cart">
+  <figcaption>Docelowa cena: „just $49!” na tle #FFFC00, potem „That means you save $150!” w Libre Baskerville / #9F2740, opakowanie produktu i pierwszy żółty przycisk „Add To Cart”.</figcaption>
+</figure>
+
+<figure>
+  <img src="text-07-add-to-cart.jpg" alt="Dolna część strony tekstowej: produkt, złoty przycisk Add To Cart i napis One Time Cost 49 dolarów">
+  <figcaption>Drugi, końcowy przycisk „Add To Cart” (ta sama grafika), pod spodem „One Time Cost $49” w Roboto 28px, kolor #9F2740.</figcaption>
+</figure>
+
+<figure class="btn">
+  <img src="text-08-przycisk-zblizenie.jpg" alt="Zbliżenie żółto-złotego przycisku Add To Cart z granatowym koszykiem i logotypami płatności">
+  <figcaption>Zbliżenie przycisku-grafiki. Żółty gradient ok. #FFDB00–#FFC500, kółko z koszykiem ok. #002A41, pod spodem niebieski link ok. #106CBF i ikony płatności. To nie jest przycisk CSS.</figcaption>
+</figure>
+
+<figure class="wide">
+  <img src="text-full.jpg" alt="Zmniejszony zrzut całej tekstowej strony His Secret Obsession od góry do dołu">
+  <figcaption>Cała wersja tekstowa, zmniejszona (oryginał ma ok. 38 tys. px wysokości).</figcaption>
+</figure>
+
+<p class="meta">Strona 15 Kasi (wersja Check v4) jest nadal tutaj: <a href="../">kate-jaskolska.github.io/podglad-lp/</a>.</p>
+
+</body>
+</html>
