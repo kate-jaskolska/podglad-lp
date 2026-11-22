@@ -6,7 +6,7 @@
 <title>Obsesyjne wiadomości | Kate Jaskólska</title>
 <meta name="description" content="Jak jedną wiadomością sprawić, że on nie może przestać o Tobie myśleć. Nawet jeśli teraz milczy. Formuła Obsesyjnych Wiadomości od Kate Jaskólskiej.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Oswald:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -24,8 +24,11 @@ img{max-width:100%;display:block}
 /* headline */
 .head{max-width:900px;margin:0 auto;padding:30px 22px 8px;text-align:center}
 .pre{font:900 13px/1.4 Lato,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);margin:0 0 14px}
-h1{font:700 clamp(32px,5.8vw,52px)/1.15 Georgia,"Times New Roman",Times,serif;color:var(--ink);margin:0 0 18px}
-h1 .em{color:var(--wine);background:linear-gradient(transparent 62%,#ffd0e3 62%)}
+h1{font:600 clamp(36px,6.2vw,58px)/1.08 "Playfair Display",Georgia,"Times New Roman",serif;color:#1b2433;margin:6px 0 22px;letter-spacing:-.015em}
+h1 .line{display:block}
+h1 .brush{display:inline-block;position:relative;margin-top:8px;padding:2px 14px 8px;color:#c2174d;font-style:italic;font-weight:600;line-height:1.16}
+h1 .brush .line{position:relative;z-index:1}
+h1 .brush::before{content:"";position:absolute;z-index:0;left:-1%;right:-2%;top:8%;bottom:4%;background:radial-gradient(130% 90% at 18% 42%,#ffe3ee 0%,#ffc5d8 38%,#ffd3e3 62%,rgba(255,214,228,.35) 78%,transparent 88%);border-radius:48% 52% 46% 54%/62% 48% 58% 42%;transform:rotate(-1.4deg)}
 .subhead{font:italic 400 clamp(19px,2.6vw,24px)/1.8 Arial,Helvetica,sans-serif;color:var(--grey);margin:0 auto 26px;max-width:720px}
 
 /* hero video */
@@ -170,7 +173,7 @@ footer .disc{font-size:11.5px;color:#777}
   .hero{padding:10px}
   .video .vsl-cover{padding:16px}
   .letter{padding:16px 20px 36px}
-  h1{font-size:clamp(30px,8.2vw,44px)}
+  h1{font-size:clamp(32px,8.6vw,46px)}
   h2.sh{margin-top:58px;margin-bottom:31px;font-size:clamp(26px,7vw,34px)}
   h3{font-size:22px}
   .hi{font-size:24px}
@@ -235,15 +238,19 @@ footer .disc{font-size:11.5px;color:#777}
 .letter p.quote{margin:34px 0}
 
 .hso-value{font:700 13px/1.35 Arial,Helvetica,sans-serif;color:var(--wine);margin:8px 0 0;letter-spacing:.02em}
+#ow-root h1,#ow-root h1 .line,#ow-root h1 .brush{font-family:"Playfair Display",Georgia,"Times New Roman",serif!important;font-weight:600!important}
+#ow-root h1{font-size:clamp(36px,6.2vw,58px)!important;line-height:1.08!important;color:#1b2433!important}
+#ow-root h1 .brush{font-style:italic!important;color:#c2174d!important}
+@media (max-width:640px){#ow-root h1{font-size:clamp(32px,8.6vw,46px)!important}}
 </style>
 <meta name="robots" content="noindex">
 </head>
 <body>
-<div class="bar">Dla kobiet, które znowu patrzą w telefon i czekają, aż on napisze</div>
+<div class="bar">Dla kobiet, które znów patrzą w telefon i czekają, aż on napisze.</div>
 
 <!-- NAGŁÓWEK -->
 <header class="head">
-<h1>Jak jedną wiadomością sprawić, że on <span class="em">nie może przestać o Tobie myśleć</span></h1>
+<h1><span class="line">Jak jedną wiadomością</span><span class="line">sprawić, że on</span><span class="brush"><span class="line">nie może przestać</span><span class="line">o Tobie myśleć?</span></span></h1>
   <p class="subhead">Nawet jeśli teraz milczy.<br>Bez gier, bez udawania, że Ci nie zależy.<br>I bez kolejnego wieczoru z telefonem w ręku.</p>
 </header>
 <div class="hero">
@@ -690,14 +697,14 @@ footer .disc{font-size:11.5px;color:#777}
 <p>Piszesz ze spokoju.</p>
 <p class="hit">A on dostaje przestrzeń, żeby się postarać.</p>
 <h3>„Gdzie znajdę materiały?”</h3>
-<p>Dostęp dostajesz <b>natychmiast po zakupie</b> na www.katejaskolska.pl.</p>
+<p>Dostęp dostajesz <b>natychmiast po zakupie</b> na <a href="https://akademia.katejaskolska.pl">akademia.katejaskolska.pl</a>.</p>
 <p>Ustawiasz hasło i możesz zaczynać.</p>
 <p>Nie widzisz maila? Sprawdź spam albo folder „inne”.</p>
 <h3>„Jak wygląda zakup?”</h3>
 <ul class="ic arrow">
   <li>Klikasz czerwony przycisk.</li>
   <li>Podajesz e-mail i dane do zamówienia, płacisz.</li>
-  <li>Od razu dostajesz maila z dostępem do www.katejaskolska.pl.</li>
+  <li>Od razu dostajesz maila z dostępem do <a href="https://akademia.katejaskolska.pl">akademia.katejaskolska.pl</a>.</li>
 </ul>
 
 <!-- DECYZJA -->
@@ -762,7 +769,7 @@ footer .disc{font-size:11.5px;color:#777}
 </main>
 
 <footer>
-  <div><a href="mailto:jaskolska.kate@gmail.com">Kontakt</a> • <a href="https://katejaskolska.pl/regulamin">Regulamin sklepu</a> • <a href="https://akademia.katejaskolska.pl/polityka-prywatnosci">Polityka prywatności</a></div>
+  <div><a href="mailto:jaskolska.kate@gmail.com">Kontakt</a> • <a href="https://akademia.katejaskolska.pl/regulamin">Regulamin sklepu</a> • <a href="https://akademia.katejaskolska.pl/polityka-prywatnosci">Polityka prywatności</a></div>
   <p>© 2026 Kate Jaskólska</p>
   <p class="disc">Administratorem danych osobowych jest Katarzyna Jaskólska &amp; Jacek Jaskólski Spółka Cywilna. Szczegóły znajdziesz w <a href="https://akademia.katejaskolska.pl/polityka-prywatnosci">Polityce prywatności</a>. Korzystanie ze strony oznacza akceptację Regulaminu i Polityki prywatności. Oferta przeznaczona dla osób pełnoletnich. Efekty zależą od indywidualnej sytuacji i nie są gwarantowane. Materiały mają charakter edukacyjny i nie zastępują pomocy psychologa ani terapeuty.</p>
 </footer>
