@@ -158,10 +158,10 @@ footer .disc{font-size:11.5px;color:#777}
 .sticky{display:none}
 @media (min-width:700px){.about{grid-template-columns:240px 1fr}}
 @media (max-width:640px){
-  .sticky{display:block;position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.97);border-top:1px solid #ffdbe6;padding:8px 12px 10px;box-shadow:0 -4px 16px rgba(0,0,0,.08);text-align:center}
+  .sticky.is-on{display:block;position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.97);border-top:1px solid #ffdbe6;padding:8px 12px 10px;box-shadow:0 -4px 16px rgba(0,0,0,.08);text-align:center}
   .sticky a{display:block;background:var(--blue);color:#fff;text-decoration:none;font:900 16px/1.2 Lato,Arial,sans-serif;padding:13px 10px;border-radius:6px}
   .sticky small{display:block;font:400 11.5px Lato,Arial,sans-serif;color:var(--grey);margin-top:4px}
-  body{padding-bottom:84px}
+  body.sticky-on{padding-bottom:84px}
   body{font-size:17.5px}
   .head{padding-top:22px}
   .inset{float:none;width:100%;margin:10px 0 18px}
@@ -188,7 +188,18 @@ footer .disc{font-size:11.5px;color:#777}
 .photo-add.formula{max-width:280px;background:#fff}
 .bonus-cover.box{max-width:280px}
 
-.photo-add.cover,.photo-add.mock{max-width:420px}
+.photo-add.cover,.photo-add.mock{max-width:336px}
+.photo-add.kanapa{max-width:440px}
+.hso-bonuses{display:grid;gap:14px;margin:14px 0 6px}
+.hso-bonus{display:grid;grid-template-columns:100px 1fr;gap:14px;align-items:center;background:#fff;border:1px solid #ffd0e0;border-radius:14px;padding:12px 14px;box-shadow:0 8px 24px rgba(232,25,90,.12)}
+.hso-bonus figure{margin:0}
+.hso-bonus img{width:100%;height:auto;border-radius:8px;background:#fff;display:block}
+.hso-label{font:700 11px/1 Lato,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,#ff4f81,#e8195a);border-radius:999px;padding:5px 10px;display:inline-block;margin-bottom:6px}
+.hso-bonus h3{font:900 16px/1.25 Lato,Arial,sans-serif;color:var(--ink);margin:0 0 6px}
+.hso-bonus p{font:400 14.5px/1.45 Georgia,serif;color:var(--grey);margin:0}
+.seen-card{max-width:260px;margin:18px auto 24px;text-align:right}
+.seen-card .seen-time{font:700 12px Lato,Arial,sans-serif;letter-spacing:.08em;color:var(--rose);margin-bottom:2px}
+
 .bonus-pack{margin:22px 0 8px;padding:4px 0 8px}
 .bonus-trio{display:flex;justify-content:center;align-items:flex-end;gap:10px;max-width:420px;margin:8px auto 0;padding:10px;background:#fff;border-radius:12px;box-shadow:0 8px 24px rgba(232,25,90,.12)}
 .bonus-trio figure{flex:1;margin:0;max-width:120px}
@@ -267,20 +278,25 @@ footer .disc{font-size:11.5px;color:#777}
   <img src="https://intro.katejaskolska.pl/wp-content/uploads/2026/09/chatgpt-image-jun-10-2026-01-30-54-pm.png" alt="Kate Jaskólska z telefonem na podłodze" width="1131" height="1391">
 </figure>
 
-<p>Na początku wszystko było jak z filmu. <span class="ph">[DO POTWIERDZENIA: jak się poznaliście, jak on się starał na początku, 2 lub 3 zdania]</span></p>
-<p>A potem coś się zmieniło. Odpisywał później. Krócej. Bez wiadomości na dobranoc. <span class="ph">[DO POTWIERDZENIA]</span></p>
+<p>Na początku wszystko było jak z filmu. Odpisywał od razu. Pisał na dobranoc.</p>
+<p>A potem coś się zmieniło. Odpisywał później. Krócej. Bez wiadomości na dobranoc.</p>
 <p class="quote">Pisałam do niego, a on odpisywał jednym słowem. Albo wcale.</p>
 <p>Tego wieczoru napisałam. <b>Przeczytał. Nie odpisał.</b></p>
+<div class="chat seen-card" aria-hidden="true">
+  <div class="seen-time">23:14</div>
+  <div class="seen">Przeczytane ✓✓</div>
+  <div class="silence">cisza</div>
+</div>
 <p>Napisałam jeszcze raz. <b>Przeczytał. Cisza.</b></p>
 <p>Wiedziałam, że „nie powinnam”. Że trzeba dać mu przestrzeń.</p>
 <p>I wtedy zrobiłam coś, czego nie zapomnę nigdy. <span class="k">Coś, co prawie zniszczyło wszystko.</span></p>
 <p>Wysłałam wiadomość, którą w tej sytuacji wysyła prawie każda kobieta.</p>
-<p>I właśnie ta wiadomość sprawiła, że <span class="mk">zniknął na dobre.</span> <span class="ph">[DO POTWIERDZENIA: co się stało potem]</span></p>
+<p>I właśnie ta wiadomość sprawiła, że <span class="mk">zniknął na dobre.</span> Zostałam z telefonem i z ciszą, która nie chciała się skończyć.</p>
 <p>Myślałam, że problem jest we mnie. Że muszę pisać więcej. Bardziej się angażować. Pokazywać, jak bardzo mi zależy.</p>
 <p>Ale im bardziej się starałam, tym bardziej on się wycofywał.</p>
 
-<figure class="photo-add">
-  <img src="img/kasia-kanapa.jpg" alt="Kate Jaskólska wieczorem na kanapie z telefonem" width="1080" height="1440">
+<figure class="photo-add kanapa">
+  <img src="img/kasia-kanapa.jpg" alt="Kate Jaskólska wieczorem na kanapie z telefonem" width="1080" height="1012">
 </figure>
 
 <div class="callout">
@@ -293,7 +309,7 @@ footer .disc{font-size:11.5px;color:#777}
   <div class="sig">Kate</div>
 </div>
 <p>I wtedy <b>coś przykuło moją uwagę.</b></p>
-<p>Zaczęłam przyglądać się starym rozmowom. Tym, po których on znikał. I tym nielicznym, po których nagle wracał, dzwonił, proponował spotkanie. <span class="ph">[DO POTWIERDZENIA: czy tak wyglądał Twój moment odkrycia]</span></p>
+<p>Zaczęłam przyglądać się starym rozmowom. Tym, po których on znikał. I tym nielicznym, po których nagle wracał, dzwonił, proponował spotkanie. Czytałam te zdania w kółko. Szukałam różnicy.</p>
 <p>Zobaczyłam coś, czego wcześniej nie widziałam:</p>
 <p class="pull">Nie chodzi o to, <em>czy</em> piszesz.<br>Chodzi o to, <span style="color:var(--wine)">jak dokładnie</span> piszesz.</p>
 <figure class="photo-add formula">
@@ -308,7 +324,7 @@ footer .disc{font-size:11.5px;color:#777}
   <li>Zamiast martwej rozmowy, <span class="k">rozmowa zaczęła żyć.</span></li>
 </ul>
 <p>A potem zobaczyłam dokładnie ten sam schemat u innych kobiet, które zaczęły używać tych wiadomości. On wracał do rozmowy. Angażował się. Przestawał wycofywać się bez powodu.</p>
-<p><span class="ph">[OPCJONALNIE: krótka, prawdziwa historia klientki za jej zgodą: sytuacja, wiadomość, jego reakcja]</span></p>
+<p class="pull">On wracał do rozmowy.<br>Angażował się.</p>
 
 <!-- NIE TWOJA WINA -->
 <h2 class="sh">To nie Twoja wina</h2>
@@ -340,7 +356,7 @@ footer .disc{font-size:11.5px;color:#777}
 
 <!-- ODKRYCIE / NAZWANIE -->
 <h2 class="sh">Jak powstały Obsesyjne wiadomości</h2>
-<p>To odkrycie tak mnie poruszyło, że zaczęłam zbierać wszystkie wiadomości, które naprawdę działały. <span class="ph">[DO POTWIERDZENIA: jak je zbierałaś]</span></p>
+<p>To odkrycie tak mnie poruszyło, że zaczęłam zbierać wszystkie wiadomości, które naprawdę działały. Te, po których on wracał do rozmowy. Te, po których nagle chciał więcej.</p>
 <p>Każda musiała spełnić 3 warunki:</p>
 <ul class="ic check">
   <li><b>Działa w zwykłym SMS-ie</b> albo na Instagramie.</li>
@@ -408,22 +424,45 @@ footer .disc{font-size:11.5px;color:#777}
 <div class="mod"><span class="num">06</span><h3>Moment, w którym oddajesz mu przewagę.</h3><p>Zanim on poczuje, że może pozwolić sobie na mniej.</p></div>
 <div class="mod"><span class="num">07</span><h3>Wiadomość „OSTATNIA SZANSA”.</h3><p>Na chwilę, gdy czujesz, że go tracisz. Bez desperacji.</p></div>
 <figure class="photo-add">
-  <img src="img/kasia-jacek.jpg" alt="Kate Jaskólska z mężem Jackiem" width="1080" height="1546">
+  <img src="img/kasia-jacek.jpg" alt="Kate Jaskólska z mężem Jackiem" width="1080" height="1286">
 </figure>
 
 <div class="mod"><span class="num">08</span><h3>Co naprawdę oznacza jego cisza.</h3><p>W 80% przypadków nie jest tym, czego się boisz.</p></div>
 <div class="bonus-pack">
-  <div class="mod"><span class="num">+</span><h3>Plus 3 bonusy</h3><p>e-book „Dlaczego on się oddala”, e-book „6 Archetypów Kobiecości” i nagranie audio „Alchemiczne Prowadzenie”.</p></div>
-  <div class="bonus-trio">
-    <figure><img src="img/bonus1.png" alt="Bonus: e-book Dlaczego on się oddala" width="480" height="619"></figure>
-    <figure><img src="img/bonus2.png" alt="Bonus: e-book 6 Archetypów Kobiecości" width="460" height="617"></figure>
-    <figure><img src="img/bonus3.png" alt="Bonus: nagranie audio Alchemiczne Prowadzenie" width="524" height="622"></figure>
+  <div class="mod"><span class="num">+</span><h3>Plus 3 bonusy</h3></div>
+  <div class="hso-bonuses">
+    <article class="hso-bonus">
+      <figure><img src="img/bonus1.png" alt="Bonus #1: e-book Dlaczego on się oddala" width="480" height="619"></figure>
+      <div>
+        <span class="hso-label">Bonus #1</span>
+        <h3>e-book „Dlaczego on się oddala”</h3>
+        <p>Gdy on milczy, łatwo wpaść w spiralę. Ten e-book pokazuje, co naprawdę oznacza jego cisza i jak zareagować spokojnie, zanim cokolwiek wyślesz.</p>
+      </div>
+    </article>
+    <article class="hso-bonus">
+      <figure><img src="img/bonus2.png" alt="Bonus #2: e-book 6 Archetypów Kobiecości" width="460" height="617"></figure>
+      <div>
+        <span class="hso-label">Bonus #2</span>
+        <h3>e-book „6 Archetypów Kobiecości”</h3>
+        <p>Żebyś zrozumiała, z jakiej energii piszesz — i dlaczego jedne wiadomości przyciągają, a inne odpychają.</p>
+      </div>
+    </article>
+    <article class="hso-bonus">
+      <figure><img src="img/bonus3.png" alt="Bonus #3: nagranie audio Alchemiczne Prowadzenie – The One Frequency" width="524" height="622"></figure>
+      <div>
+        <span class="hso-label">Bonus #3</span>
+        <h3>nagranie audio „Alchemiczne Prowadzenie – The One Frequency”</h3>
+        <p>Nagranie, które wycisza spiralę myśli, zanim napiszesz coś z lęku.</p>
+      </div>
+    </article>
   </div>
 </div>
 <div class="proof">
   <p class="lbl">Co mówią kobiety, które już piszą inaczej</p>
-  <div class="proof-slot"><span class="ph">[OPINIA KLIENTKI #2: wstaw prawdziwą, za zgodą]</span></div>
-  <div class="proof-slot"><span class="ph">[ZRZUT WIADOMOŚCI lub OPINIA WIDEO #2: tylko prawdziwe, z zamazanymi danymi]</span></div>
+  <figure class="op-shot featured">
+    <img src="img/opinia-agnieszka.jpg" alt="Opinia Agnieszki: milczał kilka dni, po jednej krótkiej spokojnej wiadomości odpisał i zaproponował spotkanie. Kate, to naprawdę działa!" width="800" height="1210">
+    <figcaption>Agnieszka</figcaption>
+  </figure>
 </div>
 
 <!-- BONUSY -->
@@ -450,8 +489,7 @@ footer .disc{font-size:11.5px;color:#777}
     </ul>
     <div class="result"><b>Efekt dla Ciebie:</b> przestajesz panikować przy każdej przerwie w rozmowie i reagujesz spokojnie, zanim cokolwiek wyślesz.</div>
   </div>
-  <div class="price"><span>Wartość: <s>97 zł</s></span><b>Dziś w pakiecie: 0 zł</b></div>
-</div>
+  </div>
 
 <div class="bonus">
   <div class="top"><span class="badge">BONUS #2</span><span class="icon">✨</span></div>
@@ -468,14 +506,13 @@ footer .disc{font-size:11.5px;color:#777}
     </ul>
     <div class="result"><b>Efekt dla Ciebie:</b> rozumiesz, jakiego mężczyznę przyciągasz i dlaczego. I zaczynasz świadomie wybierać energię, z której piszesz.</div>
   </div>
-  <div class="price"><span>Wartość: <s>97 zł</s></span><b>Dziś w pakiecie: 0 zł</b></div>
-</div>
+  </div>
 
 <div class="bonus">
   <div class="top"><span class="badge">BONUS #3 SPECJALNY</span><span class="icon">🎧</span></div>
   <div class="body">
     <figure class="bonus-cover"><img src="img/bonus3.png" alt="Bonus #3: nagranie audio Alchemiczne Prowadzenie" width="524" height="622"></figure>
-    <p class="name">„Alchemiczne Prowadzenie”</p>
+    <p class="name">„Alchemiczne Prowadzenie – The One Frequency”</p>
     <p class="subt">Nagranie audio</p>
     <p class="hook">Najlepsza wiadomość wysłana ze stanu lęku niszczy więcej niż brak wiadomości. On czuje energię, z której piszesz.</p>
     <p class="lbl">W środku:</p>
@@ -487,8 +524,7 @@ footer .disc{font-size:11.5px;color:#777}
     </ul>
     <div class="result"><b>Efekt dla Ciebie:</b> piszesz z miejsca, które przyciąga, a nie odpycha. Nawet wtedy, gdy w środku wszystko krzyczy „napisz do niego”.</div>
   </div>
-  <div class="price"><span>Wartość: <s>397 zł</s></span><b>Dziś w pakiecie: 0 zł</b></div>
-</div>
+  </div>
 
 <!-- CTA: w OptimizePress podepnij ten przycisk pod popup z e-mailem (zamówienie 2-etapowe). Link zastępczy: op-funnel-next-step/485 -->
 <div class="cta">
@@ -504,9 +540,8 @@ footer .disc{font-size:11.5px;color:#777}
     <p style="font:900 22px Lato,Arial,sans-serif;color:var(--ink);margin:0 0 4px">Kate Jaskólska</p>
     <ul class="stats">
       <li>💋 <b>ponad 1000 kobiet,</b> które dziś czują się kochane i zaopiekowane</li>
-      <li>📱 <b>65,7 tys.</b> obserwujących na Instagramie <span class="ph">[DO POTWIERDZENIA]</span></li>
-      <li>💍 cel: <b>+100 kobiet, które się zaręczą</b> <span class="ph">[DO POTWIERDZENIA]</span></li>
-      <li>🎓 <span class="ph">[DO POTWIERDZENIA: lata pracy z kobietami / wykształcenie / media]</span></li>
+      <li>📱 Znajdziesz mnie też na Instagramie</li>
+      <li>🎓 Stworzyłam Formułę Uzależniających Wiadomości, żebyś nie musiała zgadywać, co mu napisać</li>
     </ul>
   </div>
 </div>
@@ -567,7 +602,7 @@ footer .disc{font-size:11.5px;color:#777}
   <tr class="sum"><td>Łączna wartość</td><td><s>788 zł</s></td></tr>
   <tr class="today"><td>Twoja cena dzisiaj</td><td>97 zł</td></tr>
 </table>
-<p style="text-align:center"><span class="ph">[DO POTWIERDZENIA: cena regularna formuły 197 zł]</span></p>
+<p style="text-align:center">Dostęp od razu po zakupie. 90 dni gwarancji zwrotu pieniędzy.</p>
 <div class="anchors">Jedna konsultacja: <s>od 400 do 700 zł</s><br>Cały pakiet: <s>788 zł</s>. Nawet nie <s>197 zł</s>.</div>
 <div class="bigprice">97 <small>zł</small></div>
 <p style="text-align:center"><b>Jednorazowo.</b> Mniej niż dwie kawy z przyjaciółką, przy których znowu analizowałabyś, co on napisał.</p>
@@ -592,8 +627,9 @@ footer .disc{font-size:11.5px;color:#777}
 </div>
 <div class="proof">
   <p class="lbl">Co mówią kobiety, które już piszą inaczej</p>
-  <div class="proof-slot"><span class="ph">[OPINIA KLIENTKI #3: wstaw prawdziwą, za zgodą, najlepiej obok ceny]</span></div>
-  <div class="proof-slot"><span class="ph">[ZRZUT WIADOMOŚCI lub OPINIA WIDEO #3: tylko prawdziwe, z zamazanymi danymi]</span></div>
+  <figure class="op-shot">
+    <img src="https://intro.katejaskolska.pl/wp-content/uploads/2026/09/tripwire-lp-800-x-800-px-800-x-400-px-1.png" alt="Zrzut wiadomości: Kate, nie odzywał się do mnie od kilku dni… ale dzisiaj się odezwał, zrobiłam dokładnie tak jak mówiłaś i serio to zadziałało" width="800" height="400">
+  </figure>
 </div>
 
 <!-- GWARANCJA -->
@@ -691,6 +727,7 @@ footer .disc{font-size:11.5px;color:#777}
 </footer>
 <!-- CTA: w OptimizePress podepnij ten przycisk pod popup z e-mailem (zamówienie 2-etapowe). Link zastępczy: op-funnel-next-step/485 -->
 <div class="sticky"><a href="#">Chcę Obsesyjne wiadomości za 97 zł</a><small>🔒 90 dni gwarancji • dostęp natychmiast</small></div>
+<script>(function(){var sticky=document.querySelector('.sticky'),first=document.querySelector('.fold-cta');if(!sticky||!first)return;function check(){var on=first.getBoundingClientRect().bottom<0;sticky.classList.toggle('is-on',on);document.body.classList.toggle('sticky-on',on);}window.addEventListener('scroll',check,{passive:true});window.addEventListener('resize',check);check();})();</script>
 <script>(function(){var box=document.getElementById('vsl');if(!box)return;var cover=box.querySelector('.vsl-cover'),video=box.querySelector('video');if(!cover||!video)return;cover.addEventListener('click',function(){box.classList.add('is-playing');video.muted=false;var p=video.play();if(p&&p.catch)p.catch(function(){});});})();</script>
 </body>
 </html>
